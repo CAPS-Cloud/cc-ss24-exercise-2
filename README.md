@@ -31,9 +31,9 @@ you need to do:
 4. Use the Docker Engine to run MongoDB and your application on your VM.
 
 The setup for MongoDB in your application has changed: instead of using a 
-predefined URL (mongodb://...), you will have to **export** an *environment variable*, 
+predefined URI (mongodb://...), you will have to **export** an *environment variable*, 
 which couples with the automated tests and my automatic instance. Make sure to
-provide the proper URL when running your applcation on your VM (hint: maybe you
+provide the proper URI when running your applcation on your VM (hint: maybe you
 use **Docker Compose**)
 
 ### Requirements and Test Scenarios ###
@@ -42,7 +42,7 @@ use **Docker Compose**)
 
 1. You must create an **amd64** image (careful for those running ARM/Apple Silicon)
 2. You must run your application and MongoDB using Docker 
-3. The URL for MongoDB must be given via an **environment variable** 
+3. The URI for MongoDB must be given via an **environment variable** 
 (it is already in the code, you must define it before running your application)
 4. The exposed port describe in your Dockerfile must match with your application
 port.
@@ -118,7 +118,7 @@ $ sudo docker run # append the necessary options below, only --rm is optional
 
 #### Exporting environment variables ####
 
-Since this assignment requires configurable parameters (the database's URL),
+Since this assignment requires configurable parameters (the database's URI),
 you will have to *create variables* in your current terminal, if you run your
 application without **Docker** or **Docker Compose**. To do so, you will run:
 
@@ -129,7 +129,7 @@ setx DATABASE_URI "mongodb://..." # Windows
 
 In case you are using docker containers, you need to pass those environment
 variables to the container upon running it. For this purpose, you need to append
-an argument to the `run` command by doing `-e DATABASE_URL="mongodb://...`.
+an argument to the `run` command by doing `-e DATABASE_URI="mongodb://...`.
 The cool feature is that you append this argument multiple times to define multiple
 environment variables. Great, right?
 
