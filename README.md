@@ -17,6 +17,8 @@ The code base is the same as for the Exercise 1: feel free to change the `main.g
 and `index.html` to accomodate for your changes. However, you will need create a
 few more files to pass this assignment. Let's see what this assignment needs!
 
+> The code is available on [Github](https://github.com/CAPS-Cloud/cc-ss24-exercise-2)
+
 ### What is the task? ###
 
 As you have seen in Piazza, during this assignment, you can continue submitting
@@ -121,8 +123,8 @@ you will have to *create variables* in your current terminal, if you run your
 application without **Docker** or **Docker Compose**. To do so, you will run:
 
 ```bash
-$ export DATABASE_URL=mongodb://.... # Linux and MacOS
-setx DATABASE_URL "mongodb://..." # Windows
+$ export DATABASE_URI=mongodb://.... # Linux and MacOS
+setx DATABASE_URI "mongodb://..." # Windows
 ```
 
 In case you are using docker containers, you need to pass those environment
