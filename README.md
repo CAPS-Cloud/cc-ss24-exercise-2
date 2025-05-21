@@ -1,6 +1,6 @@
 ## Exercise 2 for Cloud Computing ##
 
-### Summer Semester 2024 ###
+### Summer Semester 2025 ###
 
 #### For more enquiries, please contact me ####
 
